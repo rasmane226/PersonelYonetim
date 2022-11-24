@@ -1,0 +1,28 @@
+﻿@model PersonelYonetim.Models.Personel
+@{
+    ViewData["Title"] = "YeniPersonel";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>YeniPersonel</h1>
+
+
+
+<form class="form-group" method="post">
+    <b>Ad </b>
+    @Html.TextBoxFor(x=>x.ad,new { @class="form-control"})
+
+    <b>Soyad </b>
+    @Html.TextBoxFor(x=>x.soyad,new { @class="form-control"})
+
+    <b>Tel </b>
+    @Html.TextBoxFor(x=>x.tel,new { @class="form-control"})
+
+    <b>Unvan id</b>
+    @Html.TextBoxFor(x=>x.unvanid,new { @class="form-control"})
+
+
+
+    <button class="btn btn-info">Personel Ekle</button>
+
+</form>

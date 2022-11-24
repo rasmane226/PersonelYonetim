@@ -1,0 +1,28 @@
+﻿@model PersonelYonetim.Models.Personel
+@{
+    ViewData["Title"] = "Personelgetir";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Personelgetir</h1>
+
+
+@using (Html.BeginForm("Personelguncelle", "Personel", FormMethod.Post))
+{
+    <b>Personel ad</b>
+    @Html.TextBoxFor(x=>x.ad,new { @class="form-control"})
+
+    <b>Personel soyad</b>
+    @Html.TextBoxFor(x=>x.soyad,new { @class="form-control"})
+
+    <b> Tel</b>
+    @Html.TextBoxFor(x=>x.tel,new { @class="form-control"})
+
+    <b> Unvan id</b>
+    @Html.TextBoxFor(x=>x.unvanid,new { @class="form-control"})
+
+
+    <br />
+    <button class="btn btn-info">Personel Guncelle</button>
+
+}

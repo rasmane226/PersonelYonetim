@@ -1,0 +1,29 @@
+﻿@using PersonelYonetim.Models
+@model List<Unvan>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>UNVANADI</th>
+        <th>PERSONELID</th>
+        <th>SİL</th>
+        <th>GUNCELLE</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.unvanad</td>
+            <td>@item.personelid</td>
+            <td><a href="/UnvanController1/Unvansil/@item.id" class="btn btn-danger">Sil</a></td>
+            <td><a href="/UnvanController1/Unvangetir/@item.id" class="btn btn-info">Güncelle</a></td>
+            
+        </tr>
+    }
+</table>
+<td><a href="/UnvanController1/YeniUnvan/" class="btn btn-primary">Yeni Unvan</a></td>
+

@@ -1,0 +1,25 @@
+﻿@model PersonelYonetim.Models.Unvan
+@{
+    ViewData["Title"] = "Unvangetir";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Unvangetir</h1>
+
+
+@using (Html.BeginForm("Unvanguncelle", "UnvanController1", FormMethod.Post))
+{
+    <b>Unvan ad</b>
+    @Html.TextBoxFor(x=>x.unvanad,new { @class="form-control"})
+
+    <b>Personel id</b>
+    @Html.TextBoxFor(x=>x.personelid,new { @class="form-control"})
+
+    <b> Id</b>
+    @Html.TextBoxFor(x=>x.id,new { @class="form-control"})
+
+   
+    <br />
+    <button class="btn btn-info">Unvan Guncelle</button>
+
+}
