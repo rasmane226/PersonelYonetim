@@ -44,7 +44,7 @@ namespace PersonelYonetim.Controllers
         {
             await HttpContext.SignOutAsync();
 
-            return RedirectToAction("Index");
+            return RedirectToAction("GirisYap");
         }
 
        
