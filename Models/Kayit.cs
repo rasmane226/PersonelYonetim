@@ -16,5 +16,7 @@ namespace PersonelYonetim.Models
         public string password { get; set; }
 
         public string test { get; set; }
+
+        public double deneme { get; set; }
     }
 }
