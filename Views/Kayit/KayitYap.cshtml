@@ -114,12 +114,25 @@ media screen and (max-width: 300px) {
      width: 100%;
   }
 }
+
+    a:link, a:visited {
+        background-color: green;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover, a:active {
+        background-color: lightgreen;
+    }
 </style>
 <body>
 
-<h2>Modal Signup Form</h2>
+<h2>Kayit yapmak için tikla</h2>
 
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Tikla</button>
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -127,10 +140,10 @@ media screen and (max-width: 300px) {
     <div class="container">
       <h1>Kayit ol</h1>
       <hr>
-      <label for="username"><b>username</b></label>
+      <label for="username"><b>Kullanici Adi</b></label>
       <input type="text" placeholder="Enter username" name="username" required>
 
-      <label for="psw"><b>Password</b></label>
+      <label for="psw"><b>Sifre</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Beni hatırla
@@ -138,6 +151,10 @@ media screen and (max-width: 300px) {
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Sil</button>
         <button type="submit" class="signupbtn">Kayit ol</button>
+
+                   
+        <a href="/login/girisyap" target="_blank">Giris Yap</a>
+
       </div>
     </div>
   </form>
