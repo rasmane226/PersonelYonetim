@@ -75,7 +75,7 @@ namespace PersonelYonetim.Controllers
 
             else
             {
-                return View();
+                return Personelgetir(p.id);
             }
         }
     }

@@ -20,7 +20,7 @@
 
     <b> Unvan id</b>
     @Html.TextBoxFor(x=>x.unvanid,new { @class="form-control"})
-
+    @Html.HiddenFor(m => m.id)
 
     <br />
     <button class="btn btn-info">Personel Guncelle</button>
